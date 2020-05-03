@@ -1,26 +1,24 @@
 import React , {useState} from 'react';
-import {Text, View, StyleSheet, TextInput, Picker} from 'react-native';
+import {Text, View, StyleSheet, TextInput } from 'react-native';
 import {AntDesign} from '@expo/vector-icons';
+import RNPickerSelect from 'react-native-picker-select';
 
 
 const PhoneNumber = () => {
-	const [selectedValue, setSelectedValue] = useState("+94");
    return(
    	<View style={styles.lbg}>
    	<Text style={styles.text1}>WhatsApp Messenger</Text>
    	<Text style={styles.text2}>Enter your mobile number to Login or Register</Text>
    	<View style={styles.phno} >
    	<View style={styles.container}>
-     <Picker
-        selectedValue={selectedValue}
-        style={{ height: 50, width: 100 }}
-        mode="dialog"
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
-      >
-        <Picker.Item label="+91" value="+91" />
-        <Picker.Item label="+92" value="+92" />
-        <Picker.Item label="+94" value="+94" />
-      </Picker>
+     <RNPickerSelect
+            onValueChange={(value) => console.log(value)}
+            items={[
+                { label: '+91', value: '+91' },
+                { label: '+92', value: '+92' },
+                { label: '+94', value: '+94' },
+            ]}
+        />
       </View>
    	<TextInput 
     placeholder="Your Mobile Number"

@@ -36,7 +36,7 @@ const styles=StyleSheet.create({
 	ubg : {
 		backgroundColor : '#465a65',
 		flex : 2,
-		justifyContent : 'flex-end'
+		justifyContent : 'space-between'
 	},
 	lbg : {
 		backgroundColor : '#ffffff',
@@ -45,13 +45,13 @@ const styles=StyleSheet.create({
 	text : {
 		fontSize : 40,
 		textAlign:'center',
-		marginTop : 5,
-		marginBottom : 25,
+		marginBottom : 45,
 		color : '#ffffff',
 		fontWeight : 'bold'
 	},
 	icon : {
-     marginLeft : 10
+     marginLeft : 10,
+     marginTop: 30
 	}
 });
 
