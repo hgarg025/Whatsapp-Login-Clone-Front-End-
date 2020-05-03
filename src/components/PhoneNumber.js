@@ -51,15 +51,7 @@ const styles=StyleSheet.create({
 		marginRight : 10,
 		marginBottom : 7,
 		fontSize : 14
-	},
-	phin : {
-		marginLeft : 40
-	},
-	text3: {
-      fontSize: 18,
-      fontWeight: '900',
-      margin : 8
-	},
+	},	
 	icon : {
 		marginTop: 13,
 		marginRight: 10
